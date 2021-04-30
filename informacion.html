@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Virtual Tech STORE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- Fontawsome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- estilos personalizados -->
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="cuerpo">
+  <div class="container-fluid color1">
+    <!-- header -->
+    <div class="row">
+      <div class="col-sm-10">
+        <!-- logo -->
+        <div class="col-sm">
+          <img class="d-block w-25" src="img/virtualtechLogo.png">
+        </div>
+      </div>
+      <div class="col-sm-2 col-cabecera">
+        <a href=" https://wa.me/573043885303?text=Me%20interesa%20lo%20que%20estás%20vendiendo"
+          target="_blank">Contactanos
+          <svg class="bi bi-people-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+          </svg></a>
+      </div>
+    </div>
+  </div><!-- fin header -->
+  <div class="psp-menu sticky-top">
+    <!-- menu no tocar-->
+    <nav class="navbar navbar-expand-sm navbar-ligth bg-ligth menu">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- navbar-->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <!-- inicio-->
+            <a class="nav-link" href="index.html"><svg class="bi bi-house-fill" width="1em" height="1em"
+                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                <path fill-rule="evenodd"
+                  d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+              </svg> Inicio <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item menu-activo">
+            <!-- informacion-->
+            <a class="nav-link" href="informacion.html"><svg class="bi bi-file-earmark-text" width="1em" height="1em"
+                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z" />
+                <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+                <path fill-rule="evenodd"
+                  d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+              </svg> Informacion</a>
+          </li>
+          <li class="nav-item dropdown">
+            <!-- Productos-->
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"><svg class="bi bi-tag-fill" width="1em" height="1em"
+                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+              </svg> Productos</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- dropdown productos-->
+              <a class="dropdown-item" href="pc.html">Computadores de escritorio</a>
+              <a class="dropdown-item" href="portatil.html">Portatiles</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="cpu.html">CPU</a>
+              <a class="dropdown-item" href="board.html">Board</a>
+              <a class="dropdown-item" href="gpu.html">GPU</a>
+              <a class="dropdown-item" href="ram.html">Memorias RAM</a>
+              <a class="dropdown-item" href="hdd.html">Discos Duros</a>
+              <a class="dropdown-item" href="audio.html">Audio</a>
+              <a class="dropdown-item" href="chasis.html">Chasis</a>
+              <a class="dropdown-item" href="monitor.html">Monitores</a>
+              <a class="dropdown-item" href="teclado.html">Teclados</a>
+              <a class="dropdown-item" href="mouse.html">Mouse</a>
+              <a class="dropdown-item" href="sonido.html">Sonido</a>
+              <a class="dropdown-item" href="fuente.html">Fuente</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <!-- lista de precios-->
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <svg class="bi bi-list-ul" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+              </svg> Lista de precios </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- dropdown lista de precios-->
+              <a class="dropdown-item" href="listapc.html">Pc Gamers</a>
+              <a class="dropdown-item" href="listaportatil.html">Portatiles Gamers</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="listapartes.html">Partes y accesorios de PC</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <!-- ubicanos-->
+            <a class="nav-link" href="ubicanos.html"><svg class="bi bi-geo-alt" width="1em" height="1em"
+                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg> Ubicanos</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <!-- carrito-->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link" id="dropdown01" data-toggle="dropdown" href="#"><svg class="bi bi-cart4" width="1em"
+                height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+              </svg> Carrito <span class="badge badge-pill badge-danger" id="ver">0</span></a>
+            <div id="carrito" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarCollapse">
+              <table id="lista-carrito" class="table">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <div class="row" style="padding-left: 1em; padding-right:  1em;">
+                <div class="col-sm-6">
+                  <a href="carrito.html" id="procesar-pedido" class="btn btn-primary btn-block">Comprar</a>
+                </div>
+                <div class="col-sm-6">
+                  <a href="#" id="vaciar-carrito" class="btn btn-danger btn-block">Vaciar</a>
+                </div>
+              </div>
+
+
+            </div>
+          </li>
+        </ul>
+      </div><!-- fin carrito-->
+    </nav>
+  </div><!-- fin menu-->
+  <!--comienzo de area de trabajo-->
+  <div class="container-fluid" style="margin-top:30px">
+    <div class="row">
+      <div class="col-sm-4" style="text-align: justify;">
+        <div class="titulo">
+          <h2>NUESTRA EMPRESA</h2>
+        </div>
+        <hr style="height: 2px; color: #203864; background-color: #203864;">
+        <img src="img/virtualtechLogo.png" alt="" style="display: block; width: 100%;">
+        <br>
+        <p>Somos una empresa especializada en el comercio de articulos electronicos de computacion de ultima generación,
+          contamos con una amplia experiencia y hemos posicionado la marca Virtual Tech Store, por mas de 20 años, ahora
+          llegamos a todo el pais, por medio de internet.</p>
+        <p>contamos con los precios mas competitivos del mercado y con los productos de mejor calidad y marcas
+          reconocidas, no dudes en explorar el sitio y ver todo nuestro catalogo de productos, ofrecemos las siguientes
+          categorias:</p>
+        <br>
+        <div class="list-group">
+          <a class="list-group-item list-group-item-action" href="pc.html">Computadores de escritorio</a>
+          <a class="list-group-item list-group-item-action" href="portatil.html">Portatiles</a>
+          <a class="list-group-item list-group-item-action" href="cpu.html">Procesadores</a>
+          <a class="list-group-item list-group-item-action" href="board.html">Tarjetas madre</a>
+          <a class="list-group-item list-group-item-action" href="gpu.html">Tarjetas de video</a>
+          <a class="list-group-item list-group-item-action" href="ram.html">Memorias RAM</a>
+          <a class="list-group-item list-group-item-action" href="hdd.html">Discos Duros</a>
+          <a class="list-group-item list-group-item-action" href="audio.html">Audio</a>
+          <a class="list-group-item list-group-item-action" href="chasis.html">Chasis</a>
+          <a class="list-group-item list-group-item-action" href="monitor.html">Monitores</a>
+          <a class="list-group-item list-group-item-action" href="teclado.html">Teclados</a>
+          <a class="list-group-item list-group-item-action" href="mouse.html">Mouse</a>
+          <a class="list-group-item list-group-item-action" href="sonido.html">Sonido</a>
+          <a class="list-group-item list-group-item-action" href="fuente.html">Fuentes</a>
+        </div>
+        <br>
+        <p>Si deseas descargar o imprimir el listado de precios completo sigue estos enlaces:</p>
+        <br>
+        <div class="list-group">
+          <a class="list-group-item list-group-item-action" href="listapc.html">Lista de precios de computadores de
+            escritorio y torres</a>
+          <a class="list-group-item list-group-item-action" href="listaportatil.html">Lista de precios de computadores
+            portatiles </a>
+          <a class="list-group-item list-group-item-action" href="listapartes.html">Lista de precios de partes y
+            accesorios de PC</a>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="row" style="text-align: justify;">
+          <div class="col">
+            <div class="titulo">
+              <h2>COMO COMPRAR</h2>
+            </div>
+            <hr style="height: 2px; color: #203864; background-color: #203864;">
+            <p><span>Busca el producto de que quieras haciendo clic en el
+                boton&nbsp;</span><strong>Productos</strong><span>&nbsp;de la barra del menu, y elije la categoria que
+                desees, una vez ahi veras un listado de productos, dale clic a&nbsp;</span><strong>Agregar a
+                carrito</strong><span>.</span></p>
+            <div class="centrar"><img src="img/info1.jpg" alt="" width="200px"></div>
+            <p><span>Puedes agregar tantos productos como quieras a tu carrito, sigue explorando hasta que selecciones
+                todos los que nesesitas.</span></p>
+            <p><span>cada vez que agregues algun producto veras como aumenta el numero en el boton del carrito:</span>
+            </p>
+            <div class="centrar"><img src="img/info2.jpg" alt=""></div>
+          </div>
+        </div>
+        <br>
+        <div class="row" style="text-align: justify;">
+          <div class="col">
+            <p>Cuando termines de seleccionar los productos, dale clic al bot&oacute;n Carrito, ah&iacute; encontraras
+              el listado de los productos que elegiste para tu compra:</p>
+            <br>
+            <div class="centrar"><img src="img/carrito.jpg" alt="" width="400px"></div>
+            <br>
+            <p>Dale clic al bot&oacute;n <strong>Comprar</strong>, y se abrir&aacute; un formulario que debes llenar con
+              tus datos personales y la direcci&oacute;n para el envi&oacute; del producto, adem&aacute;s de elegir la
+              opci&oacute;n de pago que prefieras.</p>
+            <p>Elige la cantidad de cada uno de los productos que agregaste a tu carrito y dale clic al bot&oacute;n
+              <strong>Realizar Compra</strong></p>
+            <br>
+            <div class="alert alert-danger">Recuerda iniciar sesion o registrarte antes de comprar.</div>
+            <br>
+            <p>Espera la confirmacion de tu pago y listo espera tu pedido en casa.</p>
+          </div>
+        </div>
+        <div style="text-align: justify;">
+          <div class="titulo">
+            <h2>ENVIOS Y DEVOLUCIONES</h2>
+          </div>
+          <hr style="height: 2px; color: #203864; background-color: #203864;">
+          <h3>Política de envío</h3>
+          <p>Virtual TEch Store,&nbsp; te lleva tu pedido a la direcci&oacute;n que desees en Bogotá entre 1 y dos
+            d&iacute;as h&aacute;biles y a nivel Nacional entre 2 y 8 d&iacute;as h&aacute;biles, brind&aacute;ndote una
+            cobertura en todos los municipios de Colombia, a trav&eacute;s de las empresas de mensajeria colombianas.
+          </p>
+          <p>Env&iacute;o gratis por compras superiores a $500.000.</p>
+          <br>
+          <h3>Mi paquete no ha llegado, ¿Qué hago?</h3>
+          <p>No te preocupes, solo comunícate con nosotros, por medio de Whatsapp&trade;</p>
+          <div class="centrar"><a class="btn btn-primary" data-toggle="collapse"
+              href="https://api.whatsapp.com/send?phone=573043885303?text=Hola%mi%paquete%aun%no%a%llegado"
+              role="button" aria-expanded="false" aria-controls="collapse1">
+              Contacto para información de mi pedido
+              <svg class="bi bi-people-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+              </svg>
+            </a></div>
+          <br>
+          <h3>Política de cambios y devoluciones</h3>
+          <p><span>Virtual Tech Store tiene un plazo para devoluciones de <strong>15 d&iacute;as</strong> calendario a
+              partir de la fecha en que la transportadora entrega tu pedido en la direcci&oacute;n definida. </span></p>
+          <p><span>Debes notificar a nuestro equipo acerca de la devoluci&oacute;n antes de realizarla y antes de que se
+              cumplan los 10 d&iacute;as h&aacute;biles de la entrega a trav&eacute;s de del siguiente numero de
+              contacto:</span></p>
+          <div class="centrar"><a class="btn btn-primary" data-toggle="collapse"
+              href="https://api.whatsapp.com/send?phone=573043885303?text=Hola%nesecito%hacer%una%devolución%o%cambio"
+              role="button" aria-expanded="false" aria-controls="collapse1">
+              Contacto para cambios o devoluciones
+              <svg class="bi bi-people-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+              </svg>
+            </a></div>
+          <br>
+          <p>Teniendo en cuenta que dependemos de las condiciones y tiempos de entrega establecidas por las empresas
+            transportadoras, bajo ninguna circunstancia Virtual Tech Store aceptar&aacute; un cambio o devoluci&oacute;n
+            por cuestiones de tiempos de entrega.</p>
+          <p>En el caso de devoluciones, ser&aacute; procedente el cambio del producto <strong>&uacute;nica y
+              exclusivamente por defectos de calidad en el mismo</strong>, y siempre y cuando sea devuelto en el mismo
+            estado en el que fue recibido, en empaque original y sin ning&uacute;n tipo de aver&iacute;a cumpliendo lo
+            dispuesto por la ley colombiana. Por lo que te solicitamos verificar muy bien que te sirva la referencia
+            para la tarea o proyecto que lo vas a usar, ya que no realizamos cambios si la referencia no es adecuada
+            para lo que requer&iacute;as.</p>
+          <p>Para el cambio de elementos, ten en cuenta que se debe realizar antes el proceso de verificaci&oacute;n de
+            funcionamiento del mismo, ya que no realizamos cambios por mala manipulaci&oacute;n, te pedimos asegurarte
+            del proceso realizado para usarlo con el fin de evitar inconvenientes.</p>
+          <p>En caso de confirmar la falla, tienes las siguientes opciones: cambio del producto por la misma referencia,
+            similar o cualquier otro producto de nuestra tienda&nbsp;<span>teniendo en cuenta que nuestro inventario
+              est&aacute; sujeto a disponibilidad en el momento del cambio.</span></p>
+          <p>Una vez autorizado el cambio, para hacer la devoluci&oacute;n del env&iacute;o puedes utilizar el mismo
+            empaque en que te entregamos tu pedido o utilizar un empaque de tu preferencia, sin embargo es importante
+            que el empaque sea el adecuado seg&uacute;n la naturaleza del producto para que este no se pueda ver
+            afectado durante el proceso de transporte.</p>
+          <p>Puedes realizar la devoluci&oacute;n &uacute;nicamente con la empresa transportadora que te entrego el
+            pedido.</p>
+          <p>El producto deber&aacute; devolverse en &oacute;ptimas condiciones, sin rastros de haber sido maltratado,
+            quemado o mal usado, con las etiquetas originales o en su defecto, si ya fueron retiradas, debes
+            introducirlas en el empaque.</p>
+          <p>Una vez recibido el producto en nuestra bodega verificaremos las condiciones del mismo y de acuerdo con los
+            resultados, se te enviar&aacute; un producto nuevo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--fin cuerpo del trabajo-->
+  <!-- Footer -->
+  <footer class="font-small blue">
+    <!-- Copyright -->
+    <div class="text-center py-3 col-pie">
+      <img src="img/metodospago.jpg" class="w-75">
+      <br>
+      <p>2020 © Virtual Tech STORE<br>
+        Todos Los Derechos Reservados</p>
+    </div>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- fin footer -->
+  <script src="js/sweetalert2.min.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/listar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Virtual Tech STORE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- Fontawsome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- estilos personalizados -->
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="cuerpo">
+
+  <div class="container-fluid color1">
+    <!-- header -->
+    <div class="row">
+      <div class="col-sm-10">
+        <!-- logo -->
+        <div class="col-sm">
+          <img class="d-block w-25" src="img/virtualtechLogo.png">
+        </div>
+      </div>
+      <div class="col-sm-2 col-cabecera">
+        <a href=" https://wa.me/573043885303?text=Me%20interesa%20lo%20que%20estás%20vendiendo"
+          target="_blank">Contactanos
+          <svg class="bi bi-people-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+          </svg></a>
+      </div>
+    </div>
+  </div><!-- fin header -->
+  <div class="psp-menu sticky-top">
+    <!-- menu no tocar-->
+    <nav class="navbar navbar-expand-sm navbar-ligth bg-ligth menu">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- navbar-->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <!-- inicio-->
+            <a class="nav-link" href="index.html"><svg class="bi bi-house-fill" width="1em" height="1em"
+                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                <path fill-rule="evenodd"
+                  d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+              </svg> Inicio <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <!-- informacion-->
+            <a class="nav-link" href="informacion.html"><svg class="bi bi-file-earmark-text" width="1em" height="1em"
+                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z" />
+                <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+                <path fill-rule="evenodd"
+                  d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+              </svg> Informacion</a>
+          </li>
+          <li class="nav-item dropdown menu-activo">
+            <!-- Productos-->
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"><svg class="bi bi-tag-fill" width="1em" height="1em"
+                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+              </svg> Productos</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- dropdown productos-->
+              <a class="dropdown-item" href="pc.html">Computadores de escritorio</a>
+              <a class="dropdown-item" href="portatil.html">Portatiles</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="cpu.html">CPU</a>
+              <a class="dropdown-item" href="board.html">Board</a>
+              <a class="dropdown-item" href="gpu.html">GPU</a>
+              <a class="dropdown-item" href="ram.html">Memorias RAM</a>
+              <a class="dropdown-item" href="hdd.html">Discos Duros</a>
+              <a class="dropdown-item" href="audio.html">Audio</a>
+              <a class="dropdown-item" href="chasis.html">Chasis</a>
+              <a class="dropdown-item" href="monitor.html">Monitores</a>
+              <a class="dropdown-item sub-menu-activo" href="teclado.html">Teclados</a>
+              <a class="dropdown-item" href="mouse.html">Mouse</a>
+              <a class="dropdown-item" href="sonido.html">Sonido</a>
+              <a class="dropdown-item" href="fuente.html">Fuente</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <!-- lista de precios-->
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <svg class="bi bi-list-ul" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+              </svg> Lista de precios </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- dropdown lista de precios-->
+              <a class="dropdown-item" href="listapc.html">Pc Gamers</a>
+              <a class="dropdown-item" href="listaportatil.html">Portatiles Gamers</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="listapartes.html">Partes y accesorios de PC</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <!-- ubicanos-->
+            <a class="nav-link" href="ubicanos.html"><svg class="bi bi-geo-alt" width="1em" height="1em"
+                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg> Ubicanos</a>
+          </li>
+          
+        </ul>
+      </div>
+      <div>
+        <!-- carrito-->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link" id="dropdown01" data-toggle="dropdown" href="#"><svg class="bi bi-cart4" width="1em"
+                height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+              </svg> Carrito <span class="badge badge-pill badge-danger" id="ver">0</span></a>
+            <div id="carrito" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarCollapse">
+              <table id="lista-carrito" class="table">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <div class="row" style="padding-left: 1em; padding-right:  1em;">
+                <div class="col-sm-6">
+                  <a href="carrito.html" id="procesar-pedido" class="btn btn-primary btn-block">Comprar</a>
+                </div>
+                <div class="col-sm-6">
+                  <a href="#" id="vaciar-carrito" class="btn btn-danger btn-block">Vaciar</a>
+                </div>
+              </div>
+
+
+            </div>
+          </li>
+        </ul>
+      </div><!-- fin carrito-->
+    </nav>
+  </div><!-- fin menu-->
+  <!--comienzo de area de trabajo-->
+  <div class="container-fluid py-4 mx-auto text-center">
+    <div class="titulo">
+      <h2>TECLADOS</h2>
+    </div>
+    <hr style="height: 2px; color: #203864; background-color: #203864;">
+    <h5>Selecciona los productos que desees comprar, agrega tantos como quieras al carrito de compras, para ver las
+      caracteristicas, dale clic al boton "especificaciones" y se desplegara toda la información del producto.</h5>
+    <h5>Puedes abrir varias especificaciones al tiempo para poder comparar, las caracteristicas.</h5>
+  </div>
+
+  <div class="container" id="lista-productos">
+
+    <div class="card-deck mb-3 text-center">
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">TECLADO GENIUS GX K220 O K215</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Teclado/TECLADOGENIUSGXK220OK215.jpg" class="card-img-top"
+            value="TECLADO GENIUS GX K220 O K215">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">55.000</span></h1>
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="ffxrt1" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse1">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1"
+              aria-expanded="false" aria-controls="collapse1">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse1">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Interfaz USB</p>
+              <p>Teclas de funci&oacute;n10</p>
+              <p>Teclas multimedia12</p>
+              <p>Retroiluminaci&oacute;n del tecladocolores 7</p>
+              <p>Ciclo de vida del teclado2 millones de pulsaciones de tecla</p>
+              <p>Dise&ntilde;o resistente a derramesS&Iacute;</p>
+              <p>Longitud de cable1.5 m</p>
+              <p>Peso (g)Aprox. 720 g</p>
+              <p>Dimensiones (A x A x P)467 x 190 x 28 mm (18,39 x 7,48 x 1,1 pulgadas)</p>
+              <p>Compatible con sistema operativoWindows&reg; 7, 8, 8.1, 10 o superior</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">TECLADO LOGITECH G213 PRODIGY</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Teclado/TECLADOLOGITECHG213PRODIGY.jpg" class="card-img-top"
+            value="TECLADO LOGITECH G213 PRODIGY">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">227.000</span></h1>
+
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="iffsc2" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse2">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2"
+              aria-expanded="false" aria-controls="collapse2">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse2">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>USB port</p>
+              <p>Probado con resistencia a derrames de 60 ml</p>
+              <p>Altura: 218 mm</p>
+              <p>Anchura: 452 mm</p>
+              <p>Profundidad: 33 mm</p>
+              <p>Peso: 1000 g</p>
+              <p>Tipo de conexi&oacute;n: USB 2.0</p>
+              <p>Protocolo USB: USB 2.0</p>
+              <p>Velocidad USB: M&aacute;xima</p>
+              <p>Indicadores luminosos (LED): S&iacute;</p>
+              <p>Retroiluminaci&oacute;n: RGB (5 zonas)</p>
+              <p>Longitud de cable (alimentaci&oacute;n/carga): 1,8 m</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">TECLADO MECANI CORSAIR K68 RED</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Teclado/TECLADOMECANICORSAIRK68RED.png" class="card-img-top"
+            value="TECLADO MECANI CORSAIR K68 RED">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">398.000</span></h1>
+
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="tclp3" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse3">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse3"
+              aria-expanded="false" aria-controls="collapse3">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse3">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Keyboard Warranty 2 Year<br />Weight 1.41kg<br />Keyboard Backlighting RGB<br />Keyboard Layout
+                NA<br />HID Keyboard Report Rate 1000Hz<br />Key Switches CHERRY&reg; MX Red<br />Matrix 104
+                Keys<br />Keyboard Connectivity Wired<br />Adjustable Height Yes<br />Spill/Dust Resistant
+                IP32<br />Media Controls YN Yes<br />Keyboard Type Size K68<br />Keyboard Product Family
+                K68<br />Keyboard Rollover Full Key (NKRO) with 100% Anti-Ghosting<br />Size(Full/TKL) Full
+                Size<br />Wired Connectivity USB 2.0 Type-A <br />On-Board Memory Yes<br />WIN Lock Dedicated
+                Hotkey<br />Media Keys Dedicated Hotkeys<br />Wrist Rest Included, detachable, with soft touch
+                finish<br />Keyboard CUE Software Supported in iCUE<br />Keyboard Cable Type Tangle-free rubber</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card-deck mb-3 text-center">
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">TECLADO MECANI EVGA Z10</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Teclado/TECLADOMECANIEVGAZ10.jpg" class="card-img-top"
+            value="TECLADO MECANI EVGA Z10">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">420.000</span></h1>
+
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="tclrte4" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse4">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse4"
+              aria-expanded="false" aria-controls="collapse4">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse4">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Puertos USB<br />E - Key<br />Teclas Macro EVGA<br />Deslizadores para Volumen/Brillo<br />Screen
+                LCD<br />Confiables Khailh&reg;<br />Apoya-Mu&ntilde;ecas Personalizable<br />Botones de perfiles
+                EVGA<br />Teclas Multimedia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">TECLADO CORSAIR COMBO 4.1 HS50+K55+HARP</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Teclado/TECLADOCORSAIRCOMBO4HS50.png" class="card-img-top"
+            value="TECLADO CORSAIR COMBO 4.1 HS50+K55+HARP">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">435.000</span></h1>
+
+
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="tjker5" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse5">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse5"
+              aria-expanded="false" aria-controls="collapse5">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse5">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Garant&iacute;a del teclado 2 a&ntilde;os<br />Peso 0.82kg<br />Retroiluminaci&oacute;n del teclado
+                Rgb<br />Dise&ntilde;o del teclado Na<br />Teclas macro 6<br />Tasa de informe del teclado HID
+                1000Hz<br />Interruptores de llave C&uacute;pula de goma<br />Matriz 110 Llaves<br />Dimensiones del
+                teclado 480.2mm x 166.3mm x 34.6mm<br />Conectividad del teclado Cableado<br />Altura ajustable
+                S&iacute;<br />Controles de medios YN S&iacute;<br />Tama&ntilde;o del tipo de teclado K55<br />Familia
+                de productos de teclado K55<br />Rollover del teclado Selectivo de 8 teclas (8KRO)<br />Tama&ntilde;o
+                (Full/TKL) Extendido<br />Conectividad por cable USB 2.0 Tipo-A <br />Memoria integrada
+                S&iacute;<br />Bloqueo WIN Tecla de acceso r&aacute;pido dedicada<br />Claves de medios Teclas
+                r&aacute;pidas dedicadas<br />Descanso de mu&ntilde;eca Incluido, desmontable, con acabado suave al
+                tacto<br />Keyboard CUE Software Compatible con iCUE<br />Tipo de cable de teclado Caucho sin enredos
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">TECLADO CORSAIR K68 RGB REDMX</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Teclado/TECLADOCORSAIRK68RGBREDMX.png" class="card-img-top"
+            value="TECLADO CORSAIR K68 RGB REDMX">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">517.000</span></h1>
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="tkat6" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse6">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse6"
+              aria-expanded="false" aria-controls="collapse6">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse6">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Keyboard Warranty 2 Year<br />Weight 1.41kg<br />Keyboard Backlighting RGB<br />Keyboard Layout
+                SP<br />HID Keyboard Report Rate 1000Hz<br />Key Switches CHERRY&reg; MX Red<br />Matrix 105
+                Keys<br />Keyboard Connectivity Wired<br />Adjustable Height Yes<br />Spill/Dust Resistant
+                IP32<br />Media Controls YN Yes<br />Keyboard Type Size K68<br />Keyboard Product Family
+                K68<br />Keyboard Rollover Full Key (NKRO) with 100% Anti-Ghosting<br />Size(Full/TKL) Full
+                Size<br />Wired Connectivity USB 2.0 Type-A <br />On-Board Memory Yes<br />WIN Lock Dedicated
+                Hotkey<br />Media Keys Dedicated Hotkeys<br />Wrist Rest Included, detachable, with soft touch
+                finish<br />Keyboard CUE Software Supported in iCUE<br />Keyboard Cable Type Tangle-free rubber</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck mb-3 text-center">
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">TECLADO CORSAIR STRAFE RGB MK.2</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Teclado/TECLADOCORSAIRSTRAFERGBMK.png" class="card-img-top"
+            value="TECLADO CORSAIR STRAFE RGB MK.2">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">568.000</span></h1>
+
+
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="tyudc7" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse7">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse7"
+              aria-expanded="false" aria-controls="collapse7">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse7">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Keyboard Warranty 2 Year<br />Weight 1.46kg<br />Keyboard Backlighting RGB<br />Keyboard Layout
+                ES<br />HID Keyboard Report Rate 1000Hz<br />Key Switches CHERRY&reg; MX Red<br />USB Pass-through USB
+                2.0 Type-A<br />Matrix 105 Keys<br />Keyboard Connectivity Wired<br />Adjustable Height
+                Yes<br />Additional colored and textured keycaps FPS / MOBA<br />Media Controls YN Yes<br />Keyboard
+                Type Size STRAFE<br />Keyboard Product Family STRAFE<br />Keyboard Rollover Full Key (NKRO) with 100%
+                Anti-Ghosting<br />Size(Full/TKL) Full Size<br />Wired Connectivity USB 2.0 Type-A<br />On-Board Memory
+                8MB<br />Number Onboard profiles 3<br />WIN Lock Dedicated Hotkey<br />Media Keys Dedicated Hotkeys,
+                Volume Roller<br />Wrist Rest Included, detachable, with soft touch finish<br />Keyboard CUE Software
+                Supported in iCUE<br />Keyboard Cable Type Braided</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">TECLADO CORSAIR K70 MK2 CHRED</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Teclado/TECLADOCORSAIRK70MK2CHRED.png" class="card-img-top"
+            value="TECLADO CORSAIR K70 MK2 CHRED">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">645.000</span></h1>
+
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="tjgap8" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse8">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse8"
+              aria-expanded="false" aria-controls="collapse8">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse8">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Keyboard Warranty 2 Year<br />Weight 1.25kg<br />Keyboard Backlighting RGB<br />Keyboard Layout
+                SP<br />HID Keyboard Report Rate 1000Hz<br />Key Switches CHERRY&reg; MX Red<br />USB Pass-through USB
+                2.0 Type-A<br />Matrix 105 Keys<br />Keyboard Connectivity Wired<br />Adjustable Height
+                Yes<br />Additional colored and textured keycaps FPS / MOBA<br />Media Controls YN Yes<br />Keyboard
+                Type Size K70<br />Keyboard Product Family K70<br />Keyboard Rollover Full Key (NKRO) with 100%
+                Anti-Ghosting<br />Size(Full/TKL) Full Size<br />Wired Connectivity USB 2.0 Type-A <br />On-Board Memory
+                8MB<br />Number Onboard profiles 3<br />WIN Lock Dedicated Hotkey<br />Media Keys Dedicated Hotkeys,
+                Volume Roller<br />Wrist Rest Included, detachable, with soft touch finish<br />Keyboard CUE Software
+                Supported in iCUE<br />Keyboard Cable Type Braided</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">TECLADO CORSAIR K70 MK2 RAPIDFI</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Teclado/TECLADOCORSAIRK70MK2RAPIDFI.png" class="card-img-top"
+            value="TECLADO CORSAIR K70 MK2 RAPIDFI">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">750.000</span></h1>
+
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="tlaptb9" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse9">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse9"
+              aria-expanded="false" aria-controls="collapse9">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse9">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Keyboard Warranty 2 Year<br />Weight 1.25kg<br />Keyboard Backlighting RGB<br />Keyboard Layout
+                ES<br />HID Keyboard Report Rate 1000Hz<br />Key Switches CHERRY&reg; MX Speed<br />USB Pass-through USB
+                2.0 Type-A<br />Matrix 105 Keys<br />Keyboard Connectivity Wired<br />Adjustable Height
+                Yes<br />Additional colored and textured keycaps FPS / MOBA<br />Media Controls YN Yes<br />Keyboard
+                Type Size K70<br />Keyboard Product Family K70<br />Keyboard Rollover Full Key (NKRO) with 100%
+                Anti-Ghosting<br />Size(Full/TKL) Full Size<br />Wired Connectivity USB 2.0 Type-A <br />On-Board Memory
+                8MB<br />Number Onboard profiles 3<br />WIN Lock Dedicated Hotkey<br />Media Keys Dedicated Hotkeys,
+                Volume Roller<br />Wrist Rest Included, detachable, with soft touch finish<br />Keyboard CUE Software
+                Supported in iCUE<br />Keyboard Cable Type Braided</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="card-deck mb-3 text-center" style="align-items: center;">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">TECLADO LOGITECH G815 RGB</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Teclado/TECLADOLOGITECHG815RGB.jpg" class="card-img-top"
+            value="TECLADO LOGITECH G815 RGB">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">755.000</span></h1>
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="tbvvds10" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse10">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse10"
+              aria-expanded="false" aria-controls="collapse10">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse10">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Teclado mec&aacute;nico RGB LIGHTSYNC G815<br />Longitud: 475 mm<br />Anchura: 150 mm<br />Altura: 22
+                mm<br />Peso (sin cable): 1045 g<br />Peso (con cable): 1145 g<br />Longitud de cable de PC: 1,8
+                m<br />Interruptores GL de perfil bajo:<br />Distancia real: 1,5 mm<br />Fuerza de actuaci&oacute;n: 45
+                g<br />Recorrido total: 3,0 mm<br />Memoria integrada:<br />Dos perfiles de iluminaci&oacute;n<br />Tres
+                perfiles de macros de teclas G<br />Otras caracter&iacute;sticas:<br />RGB LIGHTSYNC, iluminaci&oacute;n
+                por tecla<br />Cinco teclas G espec&iacute;ficas<br />Control multimedia espec&iacute;fico y rueda de
+                volumen sin bordes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4"></div>
+    </div>
+  </div>
+  <!--fin cuerpo del trabajo-->
+
+<!-- Footer -->
+<footer class="font-small blue">
+  <!-- Copyright -->
+  <div class="text-center py-3 col-pie">
+    <img src="img/metodospago.jpg" class="w-75">
+    <br><p>2020 © Virtual Tech STORE<br>
+      Todos Los Derechos Reservados</p>
+  </div>
+</div>
+  <!-- Copyright -->
+</footer>
+<!-- fin footer -->
+  <script src="js/sweetalert2.min.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/pedido.js"></script>
+</body>
+
+</html>
