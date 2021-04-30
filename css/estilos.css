@@ -157,7 +157,7 @@ a {
   width: 50%;
 }
 #cargando {
-  display: none;
+  display: block;
 }
 .borrar-producto{
   color:RED;

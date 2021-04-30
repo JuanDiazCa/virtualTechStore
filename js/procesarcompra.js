@@ -8,9 +8,13 @@ const direccion = document.getElementById('dir');
 const documento = document.getElementById('documento');
 const entrega = document.getElementById('entrega');
 
+
 cargarEventos();
 
 function cargarEventos() {
+
+    
+
     document.addEventListener('DOMContentLoaded', compra.leerLocalStorageCompra());
 
     //Eliminar productos del carrito

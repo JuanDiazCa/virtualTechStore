@@ -134,6 +134,7 @@ class Carrito {
 
     //Mostrar los productos guardados en el LS en compra.html
     leerLocalStorageCompra(){
+        const cargandoGif = document.querySelector('#cargando');
         let productosLS;
         productosLS = this.obtenerProductosLocalStorage();
         productosLS.forEach(function (producto){
@@ -154,6 +155,7 @@ class Carrito {
             `;
             listaCompra.appendChild(row);
         });
+        cargandoGif.style.display = 'none';
     }
 
     //Eliminar producto por ID del LS

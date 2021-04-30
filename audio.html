@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <title>Virtual Tech STORE</title>
   <meta charset="utf-8">
@@ -9,64 +10,73 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <!-- Fontawsome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!-- estilos personalizados -->
   <link rel="stylesheet" href="css/sweetalert2.min.css">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body class="cuerpo">
   <div class="container-fluid color1">
-  <!-- header -->
-  <div class="row">
-    <div class="col-sm-10">
-      <!-- logo -->
-      <div class="col-sm">
-        <img class="d-block w-25" src="img/virtualtechLogo.png">
+    <!-- header -->
+    <div class="row">
+      <div class="col-sm-10">
+        <!-- logo -->
+        <div class="col-sm">
+          <img class="d-block w-25" src="img/virtualtechLogo.png">
+        </div>
+      </div>
+      <div class="col-sm-2 col-cabecera">
+        <a href=" https://wa.me/573043885303?text=Me%20interesa%20lo%20que%20estás%20vendiendo"
+          target="_blank">Contactanos
+          <svg class="bi bi-people-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+          </svg></a>
       </div>
     </div>
-    <div class="col-sm-2 col-cabecera">
-      <a href=" https://wa.me/573043885303?text=Me%20interesa%20lo%20que%20estás%20vendiendo"
-        target="_blank">Contactanos
-        <svg class="bi bi-people-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
-        </svg></a>
-    </div>
-  </div>
-</div><!-- fin header -->
-  <div class="psp-menu sticky-top"><!-- menu no tocar-->
+  </div><!-- fin header -->
+  <div class="psp-menu sticky-top">
+    <!-- menu no tocar-->
     <nav class="navbar navbar-expand-sm navbar-ligth bg-ligth menu">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar"><!-- navbar-->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- navbar-->
         <ul class="navbar-nav">
-          <li class="nav-item"><!-- inicio-->
-            <a class="nav-link" href="index.html"><svg class="bi bi-house-fill" width="1em" height="1em" viewBox="0 0 16 16"
-              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-              <path fill-rule="evenodd"
-                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-            </svg> Inicio <span class="sr-only"></span></a>
+          <li class="nav-item">
+            <!-- inicio-->
+            <a class="nav-link" href="index.html"><svg class="bi bi-house-fill" width="1em" height="1em"
+                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                <path fill-rule="evenodd"
+                  d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+              </svg> Inicio <span class="sr-only"></span></a>
           </li>
-          <li class="nav-item"><!-- informacion-->
+          <li class="nav-item">
+            <!-- informacion-->
             <a class="nav-link" href="informacion.html"><svg class="bi bi-file-earmark-text" width="1em" height="1em"
-              viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z" />
-              <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
-              <path fill-rule="evenodd"
-                d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
-            </svg> Informacion</a>
+                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z" />
+                <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+                <path fill-rule="evenodd"
+                  d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+              </svg> Informacion</a>
           </li>
-          <li class="nav-item dropdown menu-activo"><!-- Productos-->
+          <li class="nav-item dropdown menu-activo">
+            <!-- Productos-->
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false"><svg class="bi bi-tag-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-            </svg> Productos</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown"><!-- dropdown productos-->
+              aria-haspopup="true" aria-expanded="false"><svg class="bi bi-tag-fill" width="1em" height="1em"
+                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+              </svg> Productos</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- dropdown productos-->
               <a class="dropdown-item" href="pc.html">Computadores de escritorio</a>
               <a class="dropdown-item" href="portatil.html">Portatiles</a>
               <div class="dropdown-divider"></div>
@@ -84,452 +94,470 @@
               <a class="dropdown-item" href="fuente.html">Fuente</a>
             </div>
           </li>
-          <li class="nav-item dropdown"><!-- lista de precios-->
+          <li class="nav-item dropdown">
+            <!-- lista de precios-->
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <svg class="bi bi-list-ul" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                  </svg> Lista de precios </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown"><!-- dropdown lista de precios-->
-                    <a class="dropdown-item" href="listapc.html">Pc Gamers</a>
-                    <a class="dropdown-item" href="listaportatil.html">Portatiles Gamers</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="listapartes.html">Partes y accesorios de PC</a>
-                  </div>
+              aria-haspopup="true" aria-expanded="false">
+              <svg class="bi bi-list-ul" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+              </svg> Lista de precios </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- dropdown lista de precios-->
+              <a class="dropdown-item" href="listapc.html">Pc Gamers</a>
+              <a class="dropdown-item" href="listaportatil.html">Portatiles Gamers</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="listapartes.html">Partes y accesorios de PC</a>
+            </div>
           </li>
-          <li class="nav-item"><!-- ubicanos-->
-            <a class="nav-link" href="ubicanos.html"><svg class="bi bi-geo-alt" width="1em" height="1em" viewBox="0 0 16 16"
-              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-            </svg> Ubicanos</a>
+          <li class="nav-item">
+            <!-- ubicanos-->
+            <a class="nav-link" href="ubicanos.html"><svg class="bi bi-geo-alt" width="1em" height="1em"
+                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg> Ubicanos</a>
           </li>
         </ul>
       </div>
-      <div><!-- carrito-->
+      <div>
+        <!-- carrito-->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link" id="dropdown01" data-toggle="dropdown" href="#"><svg class="bi bi-cart4" width="1em" height="1em"
-              viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-            </svg> Carrito <span class="badge badge-pill badge-danger" id="ver">0</span></a>
-              <div id="carrito" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarCollapse">
-                  <table id="lista-carrito" class="table">
-                      <thead>
-                          <tr>
-                              <th>Imagen</th>
-                              <th>Nombre</th>
-                              <th>Precio</th>
-                              <th></th>
-                          </tr>
-                      </thead>
-                      <tbody></tbody>
-                  </table>
-                  <div class="row" style="padding-left: 1em; padding-right:  1em;">
-                    <div class="col-sm-6">
-                      <a href="carrito.html" id="procesar-pedido" class="btn btn-primary btn-block">Comprar</a>
-                    </div>
-                    <div class="col-sm-6">
-                      <a href="#" id="vaciar-carrito" class="btn btn-danger btn-block">Vaciar</a>
-                    </div>
-                  </div>
-                  
-                  
+            <a class="nav-link" id="dropdown01" data-toggle="dropdown" href="#"><svg class="bi bi-cart4" width="1em"
+                height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+              </svg> Carrito <span class="badge badge-pill badge-danger" id="ver">0</span></a>
+            <div id="carrito" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarCollapse">
+              <table id="lista-carrito" class="table">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <div class="row" style="padding-left: 1em; padding-right:  1em;">
+                <div class="col-sm-6">
+                  <a href="carrito.html" id="procesar-pedido" class="btn btn-primary btn-block">Comprar</a>
+                </div>
+                <div class="col-sm-6">
+                  <a href="#" id="vaciar-carrito" class="btn btn-danger btn-block">Vaciar</a>
+                </div>
               </div>
+            </div>
           </li>
-      </ul>
-      </div><!-- fin carrito-->  
+        </ul>
+      </div><!-- fin carrito-->
     </nav>
   </div><!-- fin menu-->
-<!--comienzo de area de trabajo-->
-<div class="container-fluid py-4 mx-auto text-center">
-  <div class="titulo">
+  <!--comienzo de area de trabajo-->
+  <div class="container-fluid py-4 mx-auto text-center">
+    <div class="titulo">
       <h2>AUDIO</h2>
     </div>
-      <hr style="height: 2px; color: #203864; background-color: #203864;">
-      <h5>Selecciona los productos que desees comprar, agrega tantos como quieras al carrito de compras, para ver las caracteristicas, dale clic al boton "especificaciones" y se desplegara toda la información del producto.</h5>
-      <h5>Puedes abrir varias especificaciones al tiempo para poder comparar, las caracteristicas.</h5>
+    <hr style="height: 2px; color: #203864; background-color: #203864;">
+    <h5>Selecciona los productos que desees comprar, agrega tantos como quieras al carrito de compras, para ver las
+      caracteristicas, dale clic al boton "especificaciones" y se desplegara toda la información del producto.</h5>
+    <h5>Puedes abrir varias especificaciones al tiempo para poder comparar, las caracteristicas.</h5>
   </div>
-
-<div class="container" id="lista-productos">
-
-<div class="card-deck mb-3 text-center">
-    
-    <div class="card mb-4 shadow-sm">
+  <div class="container" id="lista-productos">
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 shadow-sm">
         <div class="card-header">
-            <h4 class="my-0 font-weight-bold">AURICULARES LOGITECH G PRO REFRESSH</h4>
+          <h4 class="my-0 font-weight-bold">AURICULARES LOGITECH G PRO REFRESSH</h4>
         </div>
         <div class="card-body">
-            <img src="img/Articulos/Audio/AURICULARESLOGITECHGPROREFRESSH.jpg" class="card-img-top" value="AURICULARES LOGITECH G PRO REFRESSH">
-            <h1 class="card-title pricing-card-title precio">$ <span class="">420.000</span></h1>
-            <p>
-              <a class="btn btn-primary agregar-carrito" data-id="aud1" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapse1">
-                Agregar a carrito
-              </a>
-              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                Especificaciones
-              </button>
-            </p>
-            <div class="collapse" id="collapse1">
-              <div class="card card-body"><!--especificaciones-->
-                <p>Aud&iacute;fono:</p>
-                <p>Transductor: Malla h&iacute;brida PRO-G de 50 mm</p>
-                <p>Im&aacute;n: Neodimio</p>
-                <p>Respuesta de frecuencia: 20 Hz-20 kHz</p>
-                <p>Impedancia: 35 ohmios</p>
-                <p>Sensibilidad: 91,7 dB SPL a 1 mW y 1 cm</p>
-                <p>Materiales:</p>
-                <p>Horquilla: Aluminio</p>
-                <p>Diadema: Acero</p>
-                <p>Almohadillas de aud&iacute;fonos y diadema: Piel sint&eacute;tica y espuma viscoel&aacute;stica</p>
-                <p>Micr&oacute;fono Pro:</p>
-                <p>Patr&oacute;n de captaci&oacute;n de micr&oacute;fono: Cardioide (unidireccional)</p>
-                <p>Tipo: Condensador de electreto</p>
-                <p>Tama&ntilde;o: 6 mm</p>
-                <p>Respuesta de frecuencia: 100 Hz-10 kHz</p>
-              </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-            <h4 class="my-0 font-weight-bold">AURICULARES CORSAIR HS35</h4>
-        </div>
-        <div class="card-body">
-            <img src="img/Articulos/Audio/AURICULARESCORSAIRHS35.png" class="card-img-top" value="AURICULARES CORSAIR HS35">
-            <h1 class="card-title pricing-card-title precio">$ <span class="">189.000</span></h1>
-
-            <p>
-              <a class="btn btn-primary agregar-carrito" data-id="aud2" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapse2">
-                Agregar a carrito
-              </a>
-              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                Especificaciones
-              </button>
-            </p>
-            <div class="collapse" id="collapse2">
-              <div class="card card-body"><!--especificaciones-->
-                <p>Audio Product Headset</p>
-                <p>Audio CUE Software No</p>
-                <p>Surround Sound No</p>
-                <p>Detachable Microphone Yes</p>
-                <p>Rechargble Battery N/A</p>
-                <p>Headphone Frequency Response 20Hz - 20 kHz</p>
-                <p>Headphone Battery Life N/A</p>
-                <p>Headphone Sensitivity 113dB (+/-3dB)</p>
-                <p>Headphone Wireless Range N/A</p>
-                <p>Impedance 32 Ohms @ 1 kHz</p>
-                <p>Headphone Type Wired</p>
-                <p>Headphone Connector 3.5mm analog</p>
-                <p>Headphone Drivers 50mm&nbsp;</p>
-                <p>Cable Length 1.8m</p>
-                <p>Model HS35 Stereo</p>
-                <p>Color Carbon</p>
-                <p>Audio Stereo</p>
-                <p>Lighting None</p>
-                <p>Platform PC, PS4, XBOX One, Nintendo Switch, Mobile devices</p>
-                <p>Microphone Impedance 2.0k Ohms</p>
-                <p>Microphone Type Unidirectional noise cancelling</p>
-                <p>Microphone Frequency Response 100Hz to 10kHz</p>
-                <p>Microphone Sensitivity -38dB (+/-3dB)</p>
-              </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-            <h4 class="my-0 font-weight-bold">AURICULARES ASTRO A10</h4>
-        </div>
-        <div class="card-body">
-            <img src="img/Articulos/Audio/AURICULARESASTROA10.png" class="card-img-top" value="AURICULARES ASTRO A10">
-            <h1 class="card-title pricing-card-title precio">$ <span class="">329.000</span></h1>
-
-            <p>
-              <a class="btn btn-primary agregar-carrito" data-id="aud3" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapse3">
-                Agregar a carrito
-              </a>
-              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                Especificaciones
-              </button>
-            </p>
-            <div class="collapse" id="collapse3">
-              <div class="card card-body"><!--especificaciones-->
-                <p>Micr&oacute;fono: Micr&oacute;fono unidireccional de 6,0 mm</p>
-                <p>Acoplamiento: Sobre la oreja</p>
-                <p>Conexi&oacute;n: Conector de 3,5 mm de 5 polos</p>
-                <p>Transductores: Im&aacute;n de neodimio de 40 mm</p>
-                <p>ESPECIFICACIONES T&Eacute;CNICAS</p>
-                <p>Respuesta de frecuencia: 20 - 20.000 Hz</p>
-                <p>Distorsi&oacute;n:&lt; 3% at 1 kHz</p>
-                <p>104 dB +/- 3 dDB a 1 kHz</p>
-                <p>Impedancia CC 32 ohmios</p>
-                <p>ESPECIFICACIONES F&Iacute;SICAS</p>
-                <p>Presi&oacute;n de diadema: 4,5 N</p>
-                <p>Peso sin cable: 346 gramos</p>
-              </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<div class="card-deck mb-3 text-center">
-    
-    <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-            <h4 class="my-0 font-weight-bold">AURICULARES STEELSERIES ARCTIS 1 W PS4</h4>
-        </div>
-        <div class="card-body">
-            <img src="img/Articulos/Audio/AURICULARESSTEELSERIESARCTIS1WPS4.jpg" class="card-img-top" value="AURICULARES STEELSERIES ARCTIS 1 W PS4">
-            <h1 class="card-title pricing-card-title precio">$ <span class="">363.000</span></h1>
-
-            <p>
-              <a class="btn btn-primary agregar-carrito" data-id="aud4" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapse4">
-                Agregar a carrito
-              </a>
-              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                Especificaciones
-              </button>
-            </p>
-            <div class="collapse" id="collapse4">
-              <div class="card card-body"><!--especificaciones-->
-                <p>Micr&oacute;fono con cancelaci&oacute;n de ruido ClearCast con certificaci&oacute;n Discord para una comunicaci&oacute;n de voz clara y natural en todas las plataformas</p>
-                <p>El paisaje sonoro caracter&iacute;stico de Arctis enfatiza los sonidos cr&iacute;ticos para darle una ventaja de audio.</p>
-                <p>Juega todo el d&iacute;a con los cojines AirWeave de tela inspirados en el atletismo que mantienen tus o&iacute;dos frescos y secos</p>
-                <p>Windows-Sonic surround compatible en PC y Xbox ONE</p>
-              </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-            <h4 class="my-0 font-weight-bold">AURICULARES XPG PRECOG</h4>
-        </div>
-        <div class="card-body">
-            <img src="img/Articulos/Audio/AURICULARESXPGPRECOG.png" class="card-img-top" value="AURICULARES XPG PRECOG">
-            <h1 class="card-title pricing-card-title precio">$ <span class="">375.000</span></h1>
-            <p>
-              <a class="btn btn-primary agregar-carrito" data-id="aud5" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapse5">
-                Agregar a carrito
-              </a>
-              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                Especificaciones
-              </button>
-            </p>
-            <div class="collapse" id="collapse5">
-              <div class="card card-body"><!--especificaciones-->
-                <p>Transductores duales incluidos (electrost&aacute;ticos y din&aacute;micos)</p>
-                <p>Certificado de audio de alta resoluci&oacute;n</p>
-                <p>Modos FPS/Sonido envolvente Virtual 7.1/M&uacute;sica integrados</p>
-                <p>Tecnolog&iacute;a de cancelaci&oacute;n de ruido ambiental para el micr&oacute;fono</p>
-                <p>Aud&iacute;fonos ergon&oacute;micos para los o&iacute;dos y banda de ajuste autom&aacute;tico</p>
-                <p>Aud&iacute;fonos rotativos</p>
-                <p>Compatibilidad multiplataforma</p>
-              </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-            <h4 class="my-0 font-weight-bold">AURICULARES CORSAIR HS70 PRO WIRELESS</h4>
-        </div>
-        <div class="card-body">
-            <img src="img/Articulos/Audio/AURICULARESCORSAIRHS70PROWIRELESS.png" class="card-img-top" value="AURICULARES CORSAIR HS70 PRO WIRELESS">
-            <h1 class="card-title pricing-card-title precio">$ <span class="">474.000</span></h1>
-            <p>
-              <a class="btn btn-primary agregar-carrito" data-id="aud6" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapse6">
-                Agregar a carrito
-              </a>
-              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                Especificaciones
-              </button>
-            </p>
-            <div class="collapse" id="collapse6">
-              <div class="card card-body"><!--especificaciones-->
-                <p>Audio Product Headset</p>
-                <p>Audio CUE Software Yes</p>
-                <p>Surround Sound Yes</p>
-                <p>Detachable Microphone Yes</p>
-                <p>Rechargble Battery Yes</p>
-                <p>Headphone Frequency Response 20Hz - 20 kHz</p>
-                <p>Headphone Battery Life Up to 16 hours</p>
-                <p>Headphone Sensitivity 111dB (+/-3dB)</p>
-                <p>Headphone Wireless Range Up to 40ft</p>
-                <p>Impedance 32 Ohms @ 1 kHz</p>
-                <p>Headphone Type Wireless</p>
-                <p>Headphone Connector USB Wireless Receiver</p>
-                <p>Headphone Drivers 50mm&nbsp;</p>
-                <p>Cable Length N/A</p>
-                <p>Model HS70 PRO Wireless</p>
-                <p>Color Carbon</p>
-                <p>Audio 7.1 Surround</p>
-                <p>Lighting None</p>
-                <p>Platform PC, PS4</p>
-                <p>Microphone Impedance 2.0k Ohms</p>
-                <p>Microphone Type Unidirectional noise cancelling</p>
-                <p>Microphone Frequency Response 100Hz to 10kHz</p>
-                <p>Microphone Sensitivity -40dB (+/-3dB)</p>
-              </div>
-            </div>
-
-        </div>
-    </div>
-
-</div>
-
-<div class="card-deck mb-3 text-center">
-    
-    <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-            <h4 class="my-0 font-weight-bold">AURICULARES CORSAIR VOID ELITE WIRELESS</h4>
-        </div>
-        <div class="card-body">
-            <img src="img/Articulos/Audio/AURICULARESCORSAIRVOIDELITEWIRELE.png" class="card-img-top" value="AURICULARES CORSAIR VOID ELITE WIRELESS">
-            <h1 class="card-title pricing-card-title precio">$ <span class="">538.000</span></h1>
-
-            
-            <p>
-              <a class="btn btn-primary agregar-carrito" data-id="AUD7" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapse7">
-                Agregar a carrito
-              </a>
-              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                Especificaciones
-              </button>
-            </p>
-            <div class="collapse" id="collapse7">
-              <div class="card card-body"><!--especificaciones-->
-                <p>Audio Product Headset</p>
-                <p>Audio CUE Software Yes</p>
-                <p>Surround Sound Yes</p>
-                <p>Detachable Microphone No</p>
-                <p>Rechargble Battery Yes</p>
-                <p>Headphone Frequency Response 20Hz - 30 kHz</p>
-                <p>Headphone Battery Life Up to 16 hours</p>
-                <p>Headphone Sensitivity 116dB (+/-3dB)</p>
-                <p>Headphone Wireless Range Up to 40 feet (12m)</p>
-                <p>Impedance 32k Ohms @ 1 kHz</p>
-                <p>Headphone Type Wireless</p>
-                <p>Headphone Connector USB Wireless Receiver</p>
-                <p>Headphone Drivers 50mm&nbsp;</p>
-                <p>Cable Length N/A</p>
-                <p>Model VOID ELITE Wireless</p>
-                <p>Color Carbon</p>
-                <p>Audio 7.1 Surround</p>
-                <p>Lighting RGB</p>
-                <p>Platform PC, PS4</p>
-                <p>Microphone Impedance 2.0k Ohms</p>
-                <p>Microphone Type Omnidirectional</p>
-                <p>Microphone Frequency Response 100Hz to 10kHz</p>
-                <p>Microphone Sensitivity -42dB (+/-3dB)</p>
-              </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-            <h4 class="my-0 font-weight-bold">AURICULARES STEELSERIES ARCTIS PRO GA</h4>
-        </div>
-        <div class="card-body">
-            <img src="img/Articulos/Audio/AURICULARESSTEELSERIESARCTISPROGA.jpg" class="card-img-top" value="AURICULARES STEELSERIES ARCTIS PRO GA">
-            <h1 class="card-title pricing-card-title precio">$ <span class="">799.000</span></h1>
-
-            <p>
-              <a class="btn btn-primary agregar-carrito" data-id="aud8" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapse8">
-                Agregar a carrito
-              </a>
-              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                Especificaciones
-              </button>
-            </p>
-            <div class="collapse" id="collapse8">
-              <div class="card card-body"><!--especificaciones-->
-                <p>Cada componente del sistema de audio para juegos Arctis Pro + GameDAC</p>
-                <p>Hi-Res est&aacute; meticulosamente dise&ntilde;ado para mantener un audio pr&iacute;stino y potente, desde la salida digital de la PS4 o PC hasta tus o&iacute;dos.</p>
-                <p>GameDAC: Convertidor digital a anal&oacute;gico de alta fidelidad (DAC)</p>
-                <p>Sonido de grado audi&oacute;filo con excelente detalle</p>
-                <p>Altavoces Premium de alta resoluci&oacute;n</p>
-                <p>Lujosa construcci&oacute;n de acero pulido y aleaci&oacute;n de aluminio</p>
-              </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-            <h4 class="my-0 font-weight-bold">AURICULARES CORSAIR VIRTUOSO WIRELESS</h4>
-        </div>
-        <div class="card-body">
-            <img src="img/Articulos/Audio/AURICULARESCORSAIRVIRTUOSOWIRELESS.png" class="card-img-top" value="AURICULARES CORSAIR VIRTUOSO WIRELESS">
-            <h1 class="card-title pricing-card-title precio">$ <span class="">855.000</span></h1>
-
-            <p>
-              <a class="btn btn-primary agregar-carrito" data-id="aud9" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapse9">
-                Agregar a carrito
-              </a>
-              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                Especificaciones
-              </button>
-            </p>
-            <div class="collapse" id="collapse9">
-              <div class="card card-body"><!--especificaciones-->
-                <p>Audio Product Headset</p>
-                <p>Audio CUE Software Yes</p>
-                <p>Surround Sound Yes</p>
-                <p>Detachable Microphone Yes</p>
-                <p>Rechargble Battery Yes</p>
-                <p>Headphone Frequency Response 20Hz - 40 kHz</p>
-                <p>Headphone Battery Life Up to 20 hours</p>
-                <p>Headphone Sensitivity 109dB (+/-3dB)</p>
-                <p>Headphone Wireless Range Up to 60ft</p>
-                <p>Impedance 32 Ohms @ 2.5 kHz</p>
-                <p>Headphone Type Wireless</p>
-                <p>Headphone Connector USB Wireless Receiver</p>
-                <p>Headphone Drivers 50mm&nbsp;</p>
-                <p>Cable Length N/A</p>
-                <p>Model VIRTUOSO Wireless SE</p>
-                <p>Color Gunmetal</p>
-                <p>Audio 7.1 Surround</p>
-                <p>Lighting RGB</p>
-                <p>Platform PC, PS4</p>
-                <p>Microphone Impedance 2.2k Ohms</p>
-                <p>Microphone Type Omnidirectional</p>
-                <p>Microphone Frequency Response 100Hz to 10kHz</p>
-                <p>Microphone Sensitivity -42dB (+/-2dB)</p>
-              </div>
-            </div>
-
-        </div>
-    </div>
-  </div>
-    <div class="card-deck mb-3 text-center" style="align-items: center;">
-    <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-          <h4 class="my-0 font-weight-bold">AURICULARES ASTRO A50 PC PS4 XBOX</h4>
-      </div>
-      <div class="card-body">
-          <img src="img/Articulos/Audio/AURICULARESASTROA50PCPS4XBOX.jpg" class="card-img-top" value="AURICULARES ASTRO A50 PC PS4 XBOX">
-          <h1 class="card-title pricing-card-title precio">$ <span class="">990.000</span></h1>
-
+          <img src="img/Articulos/Audio/AURICULARESLOGITECHGPROREFRESSH.jpg" class="card-img-top"
+            value="AURICULARES LOGITECH G PRO REFRESSH">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">420.000</span></h1>
           <p>
-            <a class="btn btn-primary agregar-carrito" data-id="aud10" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapse10">
+            <a class="btn btn-primary agregar-carrito" data-id="aud1" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse1">
               Agregar a carrito
             </a>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1"
+              aria-expanded="false" aria-controls="collapse1">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse1">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Aud&iacute;fono:</p>
+              <p>Transductor: Malla h&iacute;brida PRO-G de 50 mm</p>
+              <p>Im&aacute;n: Neodimio</p>
+              <p>Respuesta de frecuencia: 20 Hz-20 kHz</p>
+              <p>Impedancia: 35 ohmios</p>
+              <p>Sensibilidad: 91,7 dB SPL a 1 mW y 1 cm</p>
+              <p>Materiales:</p>
+              <p>Horquilla: Aluminio</p>
+              <p>Diadema: Acero</p>
+              <p>Almohadillas de aud&iacute;fonos y diadema: Piel sint&eacute;tica y espuma viscoel&aacute;stica</p>
+              <p>Micr&oacute;fono Pro:</p>
+              <p>Patr&oacute;n de captaci&oacute;n de micr&oacute;fono: Cardioide (unidireccional)</p>
+              <p>Tipo: Condensador de electreto</p>
+              <p>Tama&ntilde;o: 6 mm</p>
+              <p>Respuesta de frecuencia: 100 Hz-10 kHz</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">AURICULARES CORSAIR HS35</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Audio/AURICULARESCORSAIRHS35.png" class="card-img-top"
+            value="AURICULARES CORSAIR HS35">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">189.000</span></h1>
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="aud2" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse2">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2"
+              aria-expanded="false" aria-controls="collapse2">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse2">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Audio Product Headset</p>
+              <p>Audio CUE Software No</p>
+              <p>Surround Sound No</p>
+              <p>Detachable Microphone Yes</p>
+              <p>Rechargble Battery N/A</p>
+              <p>Headphone Frequency Response 20Hz - 20 kHz</p>
+              <p>Headphone Battery Life N/A</p>
+              <p>Headphone Sensitivity 113dB (+/-3dB)</p>
+              <p>Headphone Wireless Range N/A</p>
+              <p>Impedance 32 Ohms @ 1 kHz</p>
+              <p>Headphone Type Wired</p>
+              <p>Headphone Connector 3.5mm analog</p>
+              <p>Headphone Drivers 50mm&nbsp;</p>
+              <p>Cable Length 1.8m</p>
+              <p>Model HS35 Stereo</p>
+              <p>Color Carbon</p>
+              <p>Audio Stereo</p>
+              <p>Lighting None</p>
+              <p>Platform PC, PS4, XBOX One, Nintendo Switch, Mobile devices</p>
+              <p>Microphone Impedance 2.0k Ohms</p>
+              <p>Microphone Type Unidirectional noise cancelling</p>
+              <p>Microphone Frequency Response 100Hz to 10kHz</p>
+              <p>Microphone Sensitivity -38dB (+/-3dB)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">AURICULARES ASTRO A10</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Audio/AURICULARESASTROA10.png" class="card-img-top" value="AURICULARES ASTRO A10">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">329.000</span></h1>
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="aud3" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse3">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse3"
+              aria-expanded="false" aria-controls="collapse3">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse3">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Micr&oacute;fono: Micr&oacute;fono unidireccional de 6,0 mm</p>
+              <p>Acoplamiento: Sobre la oreja</p>
+              <p>Conexi&oacute;n: Conector de 3,5 mm de 5 polos</p>
+              <p>Transductores: Im&aacute;n de neodimio de 40 mm</p>
+              <p>ESPECIFICACIONES T&Eacute;CNICAS</p>
+              <p>Respuesta de frecuencia: 20 - 20.000 Hz</p>
+              <p>Distorsi&oacute;n:&lt; 3% at 1 kHz</p>
+              <p>104 dB +/- 3 dDB a 1 kHz</p>
+              <p>Impedancia CC 32 ohmios</p>
+              <p>ESPECIFICACIONES F&Iacute;SICAS</p>
+              <p>Presi&oacute;n de diadema: 4,5 N</p>
+              <p>Peso sin cable: 346 gramos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">AURICULARES STEELSERIES ARCTIS 1 W PS4</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Audio/AURICULARESSTEELSERIESARCTIS1WPS4.jpg" class="card-img-top"
+            value="AURICULARES STEELSERIES ARCTIS 1 W PS4">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">363.000</span></h1>
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="aud4" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse4">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse4"
+              aria-expanded="false" aria-controls="collapse4">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse4">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Micr&oacute;fono con cancelaci&oacute;n de ruido ClearCast con certificaci&oacute;n Discord para una
+                comunicaci&oacute;n de voz clara y natural en todas las plataformas</p>
+              <p>El paisaje sonoro caracter&iacute;stico de Arctis enfatiza los sonidos cr&iacute;ticos para darle una
+                ventaja de audio.</p>
+              <p>Juega todo el d&iacute;a con los cojines AirWeave de tela inspirados en el atletismo que mantienen tus
+                o&iacute;dos frescos y secos</p>
+              <p>Windows-Sonic surround compatible en PC y Xbox ONE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">AURICULARES XPG PRECOG</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Audio/AURICULARESXPGPRECOG.png" class="card-img-top" value="AURICULARES XPG PRECOG">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">375.000</span></h1>
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="aud5" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse5">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse5"
+              aria-expanded="false" aria-controls="collapse5">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse5">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Transductores duales incluidos (electrost&aacute;ticos y din&aacute;micos)</p>
+              <p>Certificado de audio de alta resoluci&oacute;n</p>
+              <p>Modos FPS/Sonido envolvente Virtual 7.1/M&uacute;sica integrados</p>
+              <p>Tecnolog&iacute;a de cancelaci&oacute;n de ruido ambiental para el micr&oacute;fono</p>
+              <p>Aud&iacute;fonos ergon&oacute;micos para los o&iacute;dos y banda de ajuste autom&aacute;tico</p>
+              <p>Aud&iacute;fonos rotativos</p>
+              <p>Compatibilidad multiplataforma</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">AURICULARES CORSAIR HS70 PRO WIRELESS</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Audio/AURICULARESCORSAIRHS70PROWIRELESS.png" class="card-img-top"
+            value="AURICULARES CORSAIR HS70 PRO WIRELESS">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">474.000</span></h1>
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="aud6" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse6">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse6"
+              aria-expanded="false" aria-controls="collapse6">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse6">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Audio Product Headset</p>
+              <p>Audio CUE Software Yes</p>
+              <p>Surround Sound Yes</p>
+              <p>Detachable Microphone Yes</p>
+              <p>Rechargble Battery Yes</p>
+              <p>Headphone Frequency Response 20Hz - 20 kHz</p>
+              <p>Headphone Battery Life Up to 16 hours</p>
+              <p>Headphone Sensitivity 111dB (+/-3dB)</p>
+              <p>Headphone Wireless Range Up to 40ft</p>
+              <p>Impedance 32 Ohms @ 1 kHz</p>
+              <p>Headphone Type Wireless</p>
+              <p>Headphone Connector USB Wireless Receiver</p>
+              <p>Headphone Drivers 50mm&nbsp;</p>
+              <p>Cable Length N/A</p>
+              <p>Model HS70 PRO Wireless</p>
+              <p>Color Carbon</p>
+              <p>Audio 7.1 Surround</p>
+              <p>Lighting None</p>
+              <p>Platform PC, PS4</p>
+              <p>Microphone Impedance 2.0k Ohms</p>
+              <p>Microphone Type Unidirectional noise cancelling</p>
+              <p>Microphone Frequency Response 100Hz to 10kHz</p>
+              <p>Microphone Sensitivity -40dB (+/-3dB)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">AURICULARES CORSAIR VOID ELITE WIRELESS</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Audio/AURICULARESCORSAIRVOIDELITEWIRELE.png" class="card-img-top"
+            value="AURICULARES CORSAIR VOID ELITE WIRELESS">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">538.000</span></h1>
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="AUD7" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse7">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse7"
+              aria-expanded="false" aria-controls="collapse7">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse7">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Audio Product Headset</p>
+              <p>Audio CUE Software Yes</p>
+              <p>Surround Sound Yes</p>
+              <p>Detachable Microphone No</p>
+              <p>Rechargble Battery Yes</p>
+              <p>Headphone Frequency Response 20Hz - 30 kHz</p>
+              <p>Headphone Battery Life Up to 16 hours</p>
+              <p>Headphone Sensitivity 116dB (+/-3dB)</p>
+              <p>Headphone Wireless Range Up to 40 feet (12m)</p>
+              <p>Impedance 32k Ohms @ 1 kHz</p>
+              <p>Headphone Type Wireless</p>
+              <p>Headphone Connector USB Wireless Receiver</p>
+              <p>Headphone Drivers 50mm&nbsp;</p>
+              <p>Cable Length N/A</p>
+              <p>Model VOID ELITE Wireless</p>
+              <p>Color Carbon</p>
+              <p>Audio 7.1 Surround</p>
+              <p>Lighting RGB</p>
+              <p>Platform PC, PS4</p>
+              <p>Microphone Impedance 2.0k Ohms</p>
+              <p>Microphone Type Omnidirectional</p>
+              <p>Microphone Frequency Response 100Hz to 10kHz</p>
+              <p>Microphone Sensitivity -42dB (+/-3dB)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">AURICULARES STEELSERIES ARCTIS PRO GA</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Audio/AURICULARESSTEELSERIESARCTISPROGA.jpg" class="card-img-top"
+            value="AURICULARES STEELSERIES ARCTIS PRO GA">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">799.000</span></h1>
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="aud8" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse8">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse8"
+              aria-expanded="false" aria-controls="collapse8">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse8">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Cada componente del sistema de audio para juegos Arctis Pro + GameDAC</p>
+              <p>Hi-Res est&aacute; meticulosamente dise&ntilde;ado para mantener un audio pr&iacute;stino y potente,
+                desde la salida digital de la PS4 o PC hasta tus o&iacute;dos.</p>
+              <p>GameDAC: Convertidor digital a anal&oacute;gico de alta fidelidad (DAC)</p>
+              <p>Sonido de grado audi&oacute;filo con excelente detalle</p>
+              <p>Altavoces Premium de alta resoluci&oacute;n</p>
+              <p>Lujosa construcci&oacute;n de acero pulido y aleaci&oacute;n de aluminio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">AURICULARES CORSAIR VIRTUOSO WIRELESS</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Audio/AURICULARESCORSAIRVIRTUOSOWIRELESS.png" class="card-img-top"
+            value="AURICULARES CORSAIR VIRTUOSO WIRELESS">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">855.000</span></h1>
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="aud9" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse9">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse9"
+              aria-expanded="false" aria-controls="collapse9">
+              Especificaciones
+            </button>
+          </p>
+          <div class="collapse" id="collapse9">
+            <div class="card card-body">
+              <!--especificaciones-->
+              <p>Audio Product Headset</p>
+              <p>Audio CUE Software Yes</p>
+              <p>Surround Sound Yes</p>
+              <p>Detachable Microphone Yes</p>
+              <p>Rechargble Battery Yes</p>
+              <p>Headphone Frequency Response 20Hz - 40 kHz</p>
+              <p>Headphone Battery Life Up to 20 hours</p>
+              <p>Headphone Sensitivity 109dB (+/-3dB)</p>
+              <p>Headphone Wireless Range Up to 60ft</p>
+              <p>Impedance 32 Ohms @ 2.5 kHz</p>
+              <p>Headphone Type Wireless</p>
+              <p>Headphone Connector USB Wireless Receiver</p>
+              <p>Headphone Drivers 50mm&nbsp;</p>
+              <p>Cable Length N/A</p>
+              <p>Model VIRTUOSO Wireless SE</p>
+              <p>Color Gunmetal</p>
+              <p>Audio 7.1 Surround</p>
+              <p>Lighting RGB</p>
+              <p>Platform PC, PS4</p>
+              <p>Microphone Impedance 2.2k Ohms</p>
+              <p>Microphone Type Omnidirectional</p>
+              <p>Microphone Frequency Response 100Hz to 10kHz</p>
+              <p>Microphone Sensitivity -42dB (+/-2dB)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck mb-3 text-center" style="align-items: center;">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">AURICULARES ASTRO A50 PC PS4 XBOX</h4>
+        </div>
+        <div class="card-body">
+          <img src="img/Articulos/Audio/AURICULARESASTROA50PCPS4XBOX.jpg" class="card-img-top"
+            value="AURICULARES ASTRO A50 PC PS4 XBOX">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">990.000</span></h1>
+          <p>
+            <a class="btn btn-primary agregar-carrito" data-id="aud10" data-toggle="collapse" href="#" role="button"
+              aria-expanded="false" aria-controls="collapse10">
+              Agregar a carrito
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse10"
+              aria-expanded="false" aria-controls="collapse10">
               Especificaciones
             </button>
           </p>
           <div class="collapse" id="collapse10">
-            <div class="card card-body"><!--especificaciones-->
+            <div class="card card-body">
+              <!--especificaciones-->
               <p>Micr&oacute;fono: Supresi&oacute;n de ruido unidireccional, 6,0 mm</p>
               <p>Acoplamiento: Sobre la oreja</p>
               <p>Transductores: Im&aacute;n de neodimio de 40 mm</p>
@@ -543,29 +571,23 @@
               <p>SPL caracter&iacute;stico: 118 dB a 1 kHz</p>
             </div>
           </div>
-      </div>
+        </div>
       </div>
       <div class="col-sm-4"></div>
       <div class="col-sm-4"></div>
+    </div>
   </div>
-
-
-</div>
-<!--fin cuerpo del trabajo-->
-
-<!-- Footer -->
-<footer class="font-small blue">
-  <!-- Copyright -->
-  <div class="text-center py-3 col-pie">
-    <img src="img/metodospago.jpg" class="w-75">
-    <br><p>2020 © Virtual Tech STORE<br>
-      Todos Los Derechos Reservados</p>
-  </div>
-</div>
-  <!-- Copyright -->
-</footer>
-<!-- fin footer -->
-
+  <!--fin cuerpo del trabajo-->
+  <footer class="font-small blue">
+    <!-- Footer -->
+    <div class="text-center py-3 col-pie">
+      <!-- Copyright -->
+      <img src="img/metodospago.jpg" class="w-75">
+      <br>
+      <p>2021 © Virtual Tech STORE<br>
+        Todos Los Derechos Reservados</p>
+    </div><!-- Copyright -->
+  </footer><!-- fin footer -->
   <script src="js/sweetalert2.min.js"></script>
   <script src="js/carrito.js"></script>
   <script src="js/pedido.js"></script>
